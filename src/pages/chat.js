@@ -9,16 +9,18 @@ import Contact from "./images/chatbot-contact.png";
 const Chatbot = () => {
   const navigate = useNavigate();
   const [conversation, setConversation] = useState([]);
-  const [botResponse, setBotResponse] = useState('');
+  // const [botResponse, setBotResponse] = useState('');
   const storedValue = localStorage.getItem('storageName');
 
-
-  var chat, a ,b;
+  var chat;
   const date = new Date();
   let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
   let link,len;
-
+  function evalExpression(expression) {
+    // Use parseFloat to safely evaluate the expression
+    return parseFloat(eval(expression));
+  }
   
   function discription(){
     return <ChatbotMessage bot_message="Type Hi, to Start conversation..."/>
@@ -33,7 +35,7 @@ else if(text.indexOf("televein") !== -1 || text.indexOf("tele vein") !== -1){
   len =1;
   chat = ["Tele Vein is a technology oriented Company."   ,
           "For more about televein.I provide thier //link below." ]  ;
- b="<a href='#'id='li' >Mail</a>";
+//  b="<a href='#'id='li' >Mail</a>";
   //link(b   ;
 }
 else if(text.indexOf("your" ) !== -1 && text.indexOf("name") !== -1 ){
@@ -61,7 +63,7 @@ else if(text.indexOf("doubt"  ) !== -1 ||text.indexOf("q/a"   ) !== -1 ){
   len=1;
   chat = ["Tele Vein is a technology oriented Company."   
   ,"For more about televein.I provide thier //link below." ]  ;
-  a = "<a href='mail/index.html'>Mail</a>";
+  // a = "<a href='mail/index.html'>Mail</a>";
   //link(a   ;
 }
 
@@ -85,14 +87,14 @@ else if(text.indexOf("jee"   ) !== -1 ){
     ,"Registration Starts on 2nd week of February 2024"   
     ,"Registration Ends on 2nd week of March 2024"   
     ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :"]   
-   a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
+  //  a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
     //link(a)   
  }
  else if(text.indexOf("jee" ) !== -1 &&(text.indexOf("when"  ) !== -1 ||text.indexOf("date"   ) !== -1 ||text.indexOf("exam") !== -1 ) ){
   len=1;  
   chat = ["Session 1 - January 24 to February 1, 2024 \nSession 2 - April 1 to April 15, 2024"   
     ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :"]  
-   a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
+  //  a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
  }
  else if(text.indexOf("jee" ) !== -1 &&(text.indexOf("fee"  ) !== -1 ||text.indexOf("cost") !== -1 ) ){
     chat = ["The Appilcation fee for JEE exam is divided into different category"   
@@ -100,13 +102,13 @@ else if(text.indexOf("jee"   ) !== -1 ){
     ,"For OCI/PIO card holders\n\n1.Female Candidates (GEN and GEN-PwD 	-₹ 1450.\n2.OPEN (GEN-PwD  -₹ 1450.\n3.OPEN (GEN  -₹ 2900."   
     ,"For Foreign Nationals\n\n1.Candidates Residing in SAARC Countries -$90.\n2.Candidates Residing in Non-SAARC Countries -$180"   
     ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :"]   
-   a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
+  //  a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
  }
  else if(text.indexOf("jee" ) !== -1 &&(text.indexOf("conduct"  ) !== -1 ||text.indexOf("organize") !== -1 ) ){
   len=1;  
   chat = ["JEE is conducted by National Testing Agency(NTA) "   
     ,"Visit their Official web site for further queries :"]  
-    a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
+    // a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
  }
  else if(text.indexOf("jee" ) !== -1 &&text.indexOf("subject"   ) !== -1 ){
   len=1;  
@@ -144,19 +146,19 @@ else if(text.indexOf("neet") !== -1 ){
     ,"BSMS"   
     ,"BVSc"   
     ,"Visit their Official web site for further queries :"]  
-   a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
+  //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("conduct"  ) !== -1 ||text.indexOf("organize") !== -1 ) ){
   len=1;  
   chat = ["NEET is conducted by National Testing Agency(NTA) "   
     ,"Visit their Official web site for further queries :" ] 
-   a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
+  //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("when"  ) !== -1 ||text.indexOf("date"   ) !== -1 ||text.indexOf("exam"   ) !== -1 ) ){
   len=1;  
   chat = ["The National Testing Agency (NTA  is going to conduct the NEET-UG examination on May 5, 2024, all over India.\nNOTE :Exam date may change visit the official web site of NTA for further information.\nThe //link for the web site is given below->"   
     ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :" ]  
-   a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
+  //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
     //link(a   
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("apply"  ) !== -1 ||text.indexOf("registration"  ) !== -1 ||text.indexOf("application" )  !== -1) &&(text.indexOf("when"  ) !== -1 ||text.indexOf("date") !== -1 ) ){
@@ -164,7 +166,7 @@ else if(text.indexOf("neet") !== -1 ){
     ,"The Application submission starts on March 2024"   
     ,"The Application submission ends on April 2024"  
     ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :"]  
-   a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
+  //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("fee"  ) !== -1 ||text.indexOf("cost"    ) !== -1 ) ){
     chat = "The application fee of NEET exam is divided into three category\n\n1.General category candidates will be charged an examination fee of Rs. 1700/-\n2.General-EWS and OBC-NCL candidates are required to pay Rs. 1600/-.\n3.For SC, ST, PH, and Third gender candidates, the examination fee is only Rs. 1000/-."   
@@ -178,7 +180,7 @@ else if(text.indexOf("neet") !== -1 ){
   len=1;
    chat = ["If,you want more information about NEET you cantact me."
    ,"I provide the //link below. " ] 
-   a ="a href='/mail/index.html'>Contact</a>";
+  //  a ="a href='/mail/index.html'>Contact</a>";
    //link(a   ;
   }
   else{
@@ -377,11 +379,11 @@ else if(text.indexOf("12") !== -1 && text.indexOf("physics") !== -1 && text.inde
   link =["https://drive.google.com/file/d/17KF0l3aeS3yD2oBYJ37FEsyn5l8Twklz/view?usp=sharing"
   ,"https://drive.google.com/file/d/1vxTdRkPDF0z8mm0TBdugyawGbxBH-YHH/view?usp=sharing"]
 }
-else if((text.indexOf("12" ) !== -1 &&text.indexOf("chemistry 1" ) !== -1 &&text.indexOf("book" ) !== -1) ||(text.indexOf("12" ) !== -1 &&text.indexOf("chemistry1")  !== -1) &&text.indexOf("book"    ) !== -1 ){
+else if((text.indexOf("12" ) !== -1 &&text.indexOf("chemistry 1" ) !== -1) ||(text.indexOf("12" ) !== -1 &&text.indexOf("chemistry1")  !== -1 &&text.indexOf("book"    ) !== -1 )){
   link ="https://drive.google.com/file/d/17KF0l3aeS3yD2oBYJ37FEsyn5l8Twklz/view?usp=sharing"; ;
   chat = "12th Chemistry Volume 1 Book"   
 }
-else if(((text.indexOf("12" ) !== -1 &&text.indexOf("chemistry 2" ) !== -1 &&text.indexOf("book")  !== -1) ||(text.indexOf("12" ) !== -1 &&text.indexOf("chemistry2" ) !== -1 &&text.indexOf("2" ) !== -1 ) &&text.indexOf("book"    ) !== -1 ) ){
+else if((text.indexOf("12" ) !== -1 &&text.indexOf("chemistry 2" ) !== -1 &&text.indexOf("book")  !== -1) ||(text.indexOf("12" ) !== -1 &&text.indexOf("chemistry2" ) !== -1 &&text.indexOf("2" ) !== -1  &&text.indexOf("book"    ) !== -1) ){
   link ="https://drive.google.com/file/d/1vxTdRkPDF0z8mm0TBdugyawGbxBH-YHH/view?usp=sharing";;
   chat = "12th Chemistry Volume 2 Book"   
 }
@@ -392,11 +394,11 @@ else if(text.indexOf("12" ) !== -1 &&text.indexOf("chemistry" ) !== -1 &&text.in
   chat = ["12th Chemistry Volume 1 Book"   
   ,"12th Chemistry Volume 2 Book"]
 }
-else if((text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics 1"  ) !== -1 ||text.indexOf("maths 1"  ) !== -1 ||text.indexOf("mat 1"  ) !== -1 &&text.indexOf("book" )  !== -1) ||(text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics1"  ) !== -1 ||text.indexOf("maths1"  ) !== -1 || text.indexOf("mat1")  !== -1) &&text.indexOf("book")  !== -1) ) ){
+else if((text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics 1"  ) !== -1 ||text.indexOf("maths 1"  ) !== -1 ||text.indexOf("mat 1"  ) !== -1 )&&text.indexOf("book" )  !== -1) ||(text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics1"  ) !== -1 ||text.indexOf("maths1"  ) !== -1 || text.indexOf("mat1")  !== -1) &&text.indexOf("book")  !== -1) ){
   link ="https://drive.google.com/file/d/1qCiom524Szt6SSXBiKoFs46_OAaiUhEo/view?usp=sharing";;
   chat = "12th Mathematics Volume 1 Book"   
 }
-else if((text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics 2"  ) !== -1 ||text.indexOf("maths 2"  ) !== -1 ||text.indexOf("mat 2"  ) !== -1 &&text.indexOf("book" )  !== -1) ||(text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics2"  ) !== -1 ||text.indexOf("maths2"  ) !== -1 ||text.indexOf("mat2")  !== -1) &&text.indexOf("book")  !== -1) ) ){
+else if((text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics 2"  ) !== -1 ||text.indexOf("maths 2"  ) !== -1 ||text.indexOf("mat 2"  ) !== -1 )&&text.indexOf("book" )  !== -1) ||(text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics2"  ) !== -1 ||text.indexOf("maths2"  ) !== -1 ||text.indexOf("mat2")  !== -1) &&text.indexOf("book")  !== -1)){
   link ="https://drive.google.com/file/d/1VHWA08TnYtXrhf3rt_z6OFsTrL3IJYCO/view?usp=sharing"; ;
   chat = "12th Mathematics Volume 2 Book"   
 }
@@ -559,7 +561,7 @@ else if(text.indexOf("12" ) !== -1 &&(text.indexOf("question"  ) !== -1 ||text.i
     ,"https://drive.google.com/file/d/1rNg5GV9AGd3VnRUsVnOvGD-8Rz60y9wE/view?usp=sharing"]  
  }
 }
-else  if((text.indexOf("12"  ) !== -1 ||text.indexOf("public")  !== -1) &&((text.indexOf("prepare"  ) !== -1 ||text.indexOf("preparation" )  !== -1 )||((text.indexOf("good"  ) !== -1 ||text.indexOf("more" ) !== -1)) &&text.indexOf("marks") !== -1)){
+else  if((text.indexOf("12"  ) !== -1 ||text.indexOf("public")  !== -1) && ((text.indexOf("prepare") !== -1 ||text.indexOf("preparation")  !== -1 )||(text.indexOf("good"  ) !== -1 ||text.indexOf("more" ) !== -1)) &&text.indexOf("marks") !== -1){
  if(text.indexOf("tamil"   ) !== -1 ){
    chat = ["படிக்க திட்டம் உருவாக்குக:\n1.அனைத்து பாடங்களும் மற்றும் பாடகங்களை சேர்ந்த விரிவான படிக்க திட்டம் உருவாக்குக.\n2.நீங்கள் கடினமாகக் கணிக்கும் பாடங்களுக்கு அதிக நேரம் ஒதுக்கவும்.\n3.சேர்ந்த நேரங்களில் முகநூல் சூழ்நிலைகளை தடுக்க உத்தமமான நேர ஒதுக்கவும்."   
    ,"பாடங்களை முன்னின்னும் பதிவிடுக:\n1.தேர்வுகளில் அதிக புரியும் பாடங்களை அதிக பதிவிடுக.\n2.நீங்கள் விசித்திரமாக கணிக்கும் பாடங்களுக்கு அதிக படிக்க நேரம் அளிக்கவும்."   
@@ -577,7 +579,7 @@ else  if((text.indexOf("12"  ) !== -1 ||text.indexOf("public")  !== -1) &&((text
  else{
    chat = "Create a Study Schedule:\n1.Make a detailed study schedule that covers all subjects and topics.\n2.Allocate more time to subjects or topics you find challenging.\n3.Include breaks in your schedule to avoid burnout.\n\n\n Prioritize Subjects:\n1.Identify the subjects that carry more weight in the exams and focus on them first.\n2.Allocate more study time to subjects you are less confident in.\n\n\n Set Specific Goals:\n1.Set clear, achievable goals for each study session. For example, complete a specific chapter or solve a set of practice questions.\n\n\n Break Down the Syllabus:\n1.Divide the syllabus into manageable sections or chapters.\n2.Focus on completing one section before moving on to the next.\n\n\n Use Effective Study Techniques:\n1.Active learning techniques like summarizing, teaching, or discussing topics with peers can enhance understanding.\n2.Practice previous years' question papers and sample papers to get a sense of the exam pattern.\n\n\n Avoid Procrastination:\n1.Identify your most productive study times and schedule difficult subjects during these hours.\n2.Minimize distractions, such as turning off social media and mobile notifications while studying.\n\n\nTake Regular Breaks:\n1.Short breaks between study sessions can help improve focus and prevent burnout.\n2.Use techniques like the Pomodoro method (25 minutes of focused study followed by a 5-minute break .\n\n\nStay Healthy:\n1.Get enough sleep, eat balanced meals, and stay hydrated to ensure your mind and body are in optimal condition for studying.\n\n\nRevise Regularly:\n1.Plan time for revision in your schedule, as revision is essential for retention.\n2.Create flashcards or summary notes for quick revision\n\n\n Seek Help When Needed:\n1.If you're struggling with a particular topic, don't hesitate to ask your teachers or classmates for help.\n2.Consider joining study groups to discuss and clarify doubts.\n\n\n Practice Time Management During the Exam:\n1.During the actual exam, allocate time wisely to each section or question.\n2.If you're unsure about a question, move on and come back to it later if time permits.\n\n\nStay Positive and Manage Stress:\n1.Maintain a positive mindset and believe in your abilities.\n2.Practice relaxation techniques like deep breathing and meditation to manage exam-related stress."   
    }
-}
+}//
 else if (text.indexOf("college"   ) !== -1 ){
  if(text.indexOf("tn"   ) !== -1 ){
     link ="/chatbot/pdf/Tamil Nadu Top College list.pdf"   ;
@@ -648,7 +650,7 @@ else if(text.indexOf("year") !== -1 ){
   chat = date.getFullYear().toString()    
 }
 else if(text.indexOf("*" ) !== -1 ||text.indexOf("+"  ) !== -1 ||text.indexOf("-"  ) !== -1 ||text.indexOf("/"  ) !== -1 ||text.indexOf("%"   ) !== -1 ){
- const result = eval(text);
+ const result = evalExpression(text);
   chat = result.toString()   
 }
 else  {
