@@ -17,10 +17,10 @@ const Chatbot = () => {
   let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
   let link,len;
-  function evalExpression(expression) {
-    // Use parseFloat to safely evaluate the expression
-    return parseFloat(eval(expression));
-  }
+  // function evalExpression(expression) {
+  //   // Use parseFloat to safely evaluate the expression
+  //   return parseFloat(eval(expression));
+  // }
   
   function discription(){
     return <ChatbotMessage bot_message="Type Hi, to Start conversation..."/>
@@ -649,10 +649,10 @@ else if(text.indexOf("month"   ) !== -1 ){
 else if(text.indexOf("year") !== -1 ){
   chat = date.getFullYear().toString()    
 }
-else if(text.indexOf("*" ) !== -1 ||text.indexOf("+"  ) !== -1 ||text.indexOf("-"  ) !== -1 ||text.indexOf("/"  ) !== -1 ||text.indexOf("%"   ) !== -1 ){
- const result = evalExpression(text);
-  chat = result.toString()   
-}
+// else if(text.indexOf("*" ) !== -1 ||text.indexOf("+"  ) !== -1 ||text.indexOf("-"  ) !== -1 ||text.indexOf("/"  ) !== -1 ||text.indexOf("%"   ) !== -1 ){
+//  const result = evalExpression(text);
+//   chat = result.toString()   
+// }
 else  {
  
 }
