@@ -17,13 +17,15 @@ const Chatbot = () => {
   let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
   const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
   let link,len;
-  // function evalExpression(expression) {
-  //   // Use parseFloat to safely evaluate the expression
-  //   return parseFloat(eval(expression));
-  // }
+  function evalExpression(expression) {
+    // Use parseFloat to safely evaluate the expression
+    return parseFloat(eval(expression));
+  }
   
   function discription(){
-    return <ChatbotMessage bot_message="Type Hi, to Start conversation..."/>
+    return (<><ChatbotMessage bot_message="Type Hi, to Start conversation..."/>
+      <ChatbotMessage bot_message="Ask and Get your Study Materials..."/></>
+    );
   }
 
 function display(text) {
@@ -402,7 +404,7 @@ else if((text.indexOf("12" ) !== -1 &&(text.indexOf("mathematics 2"  ) !== -1 ||
   link ="https://drive.google.com/file/d/1VHWA08TnYtXrhf3rt_z6OFsTrL3IJYCO/view?usp=sharing"; ;
   chat = "12th Mathematics Volume 2 Book"   
 }
-else if(text.indexOf("12" ) !== -1 &&text.indexOf("mat" ) !== -1 &&text.indexOf("book"   ) !== -1 ){
+else if(text.indexOf("12" ) !== -1 &&text.indexOf("maths" ) !== -1 &&text.indexOf("book"   ) !== -1 ){
   len=1;
   link =["https://drive.google.com/file/d/1qCiom524Szt6SSXBiKoFs46_OAaiUhEo/view?usp=sharing"
   ,"https://drive.google.com/file/d/1VHWA08TnYtXrhf3rt_z6OFsTrL3IJYCO/view?usp=sharing"]
@@ -649,10 +651,10 @@ else if(text.indexOf("month"   ) !== -1 ){
 else if(text.indexOf("year") !== -1 ){
   chat = date.getFullYear().toString()    
 }
-// else if(text.indexOf("*" ) !== -1 ||text.indexOf("+"  ) !== -1 ||text.indexOf("-"  ) !== -1 ||text.indexOf("/"  ) !== -1 ||text.indexOf("%"   ) !== -1 ){
-//  const result = evalExpression(text);
-//   chat = result.toString()   
-// }
+else if(text.indexOf("*" ) !== -1 ||text.indexOf("+"  ) !== -1 ||text.indexOf("-"  ) !== -1 ||text.indexOf("/"  ) !== -1 ||text.indexOf("%"   ) !== -1 ){
+ const result = evalExpression(text);
+  chat = result.toString()   
+}
 else  {
  
 }
