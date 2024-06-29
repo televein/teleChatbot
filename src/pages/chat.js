@@ -656,7 +656,7 @@ else if(text.indexOf("year") !== -1 ){
 //   chat = result.toString()   
 // }
 else  {
-  chat = "The Material You asked is not Available,Kindly Contact us using the Green Button and get You your Material";
+  chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
 }
 }
   function handleInput(event) {
