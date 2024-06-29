@@ -50,6 +50,7 @@ h1{
   border-radius: 4px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: white;
 }
 
 #header {
@@ -324,7 +325,7 @@ a:hover{
   align-items: center;
 }
 
-@media (max-width: 700px){
+@media (max-width: 800px){
   .chatbot-container{
     width:98vw;
     height: 90vh;
@@ -365,6 +366,6 @@ a:hover{
   }
   .contact{
     right: 10px;
-    bottom: 20px;
+    bottom: 65px;
   }
 }
