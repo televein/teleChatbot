@@ -7,13 +7,13 @@ import televein from "./images/televein.png";
 import Contact from "./images/chatbot-contact.png";
 
 const Chatbot = () => {
-  const { Configuration, OpenAIApi } = require("openai");
+  // const { Configuration, OpenAIApi } = require("openai");
 
-  const config = new Configuration({
-    apiKey: "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",
-  })
+  // const config = new Configuration({
+  //   apiKey: "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",
+  // })
 
-  const openai = new OpenAIApi(config);
+  // const openai = new OpenAIApi(config);
   const navigate = useNavigate();
   const [conversation, setConversation] = useState([]);
   // const [botResponse, setBotResponse] = useState('');
@@ -663,19 +663,19 @@ else if(text.indexOf("year") !== -1 ){
 //   chat = result.toString()   
 // }
 else  {
-  //chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
-   apiResponse(text);
+  chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
+   // apiResponse(text);
 }
 }
-  async function apiResponse(text){
-    const completion = await openai.createCompletion({
-      model : "text-davinci-003",
-      max_tokens : 512,
-      temperature: 0,
-      prompt: text,
-    });
-    chat = completion.data.choices[0].text;
-  };
+  // async function apiResponse(text){
+  //   const completion = await openai.createCompletion({
+  //     model : "text-davinci-003",
+  //     max_tokens : 512,
+  //     temperature: 0,
+  //     prompt: text,
+  //   });
+  //   chat = completion.data.choices[0].text;
+  // };
   function handleInput(event) {
     event.preventDefault();
     let btn;
