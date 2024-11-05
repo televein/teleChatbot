@@ -99,7 +99,71 @@ const Btn = ({msg}) => {
     chat="12th public Computer Science Guide"
   }
   else if(msg === "12th question paper"){
-    buttoncontent=["2023 12th Public Question paper and Answer","2022 12th Public Question paper and Answer"];
+    buttoncontent=["2024 12th Public Question paper and Answer","2023 12th Public Question paper and Answer","2022 12th Public Question paper and Answer"];
+  }
+  else if(msg === "2023 12th Public Question paper and Answer"){
+    buttoncontent=["2023 12th Biology Group Questions","2023 12th Computer Science Group Questions"]
+  }
+  else if(msg === "2024 12th Public Question paper and Answer"){
+    buttoncontent=["2024 12th Biology Group Questions","2024 12th Computer Science Group Questions"]
+  }
+  else if(msg === "2024 12th Biology Group Questions"){  
+    len=1;
+    pd=["https://padasalai.info/wp-content/uploads/2024/03/12th-Tamil-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Tamil-Public-Exam-March-2024-Official-Answer-key-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-English-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-English-Public-Exam-March-2024-Official-Answer-Key-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Maths-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Maths-Public-Exam-March-2024-Official-Answer-key-English-Medium-PDF-Download-1.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Physics-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Physics-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Chemistry-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Chemistry-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+    ,"https://www.educationobserver.com/forum/attachment.php?aid=64590"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Bio-Botany-Public-Exam-March-2024-Official-Answer-key-English-Medium-PDF-Download-1.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Zoology-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Bio-Botany-Public-Exam-March-2024-Official-Answer-key-English-Medium-PDF-Download-1.pdf"]
+    chat=["12th public Tamil Question 2024"
+    ,"12th public Tamil Answer 2024"
+    ,"12th public English Question 2024"
+    ,"12th public English Answer 2024"
+    ,"12th public Maths Question 2024"
+    ,"12th public Maths Answer 2024"
+    ,"12th public Physics Question 2024"
+    ,"12th public Physics Answer 2024"
+    ,"12th public Chemistry Question 2024"
+    ,"12th public Chemistry Answer 2024"
+    ,"12th public Botony Question 2024"
+    ,"12th public Botony Answer 2024"
+    ,"12th public Zoology Question 2024"
+    ,"12th public Zoology Answer 2024"]
+  }
+  else if(msg === "2024 12th Computer Science Group Questions"){
+    len=1;
+    pd=["https://padasalai.info/wp-content/uploads/2024/03/12th-Tamil-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Tamil-Public-Exam-March-2024-Official-Answer-key-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-English-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-English-Public-Exam-March-2024-Official-Answer-Key-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Maths-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Maths-Public-Exam-March-2024-Official-Answer-key-English-Medium-PDF-Download-1.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Physics-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Physics-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/03/12th-Chemistry-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Chemistry-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+    ,"https://www.educationobserver.com/forum/attachment.php?aid=64381"
+    ,"https://padasalai.info/wp-content/uploads/2024/04/12th-Computer-Science-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"]
+    chat=["12th public Tamil Question 2024"
+      ,"12th public Tamil Answer 2024"
+      ,"12th public English Question 2024"
+      ,"12th public English Answer 2024"
+      ,"12th public Maths Question 2024"
+      ,"12th public Maths Answer 2024"
+      ,"12th public Physics Question 2024"
+      ,"12th public Physics Answer 2024"
+      ,"12th public Chemistry Question 2024"
+      ,"12th public Chemistry Answer 2024"
+    ,"12th public Computer Science Question 2024"
+    ,"12th public Computer Science Answer 2024"]
   }
   else if(msg === "2023 12th Public Question paper and Answer"){
     buttoncontent=["2023 12th Biology Group Questions","2023 12th Computer Science Group Questions"]
@@ -311,12 +375,70 @@ const Btn = ({msg}) => {
     chat="11th public Computer Science Guide"
   }
   else if(msg === "11th question paper"){
-    buttoncontent=["2023 11th Public Question paper and Answer","2022 11th Public Question paper and Answer"];
+    buttoncontent=["2024 11th Public Question paper and Answer","2023 11th Public Question paper and Answer","2022 11th Public Question paper and Answer"];
   }
-  else if(msg === "2023 11th Public Question paper and Answer"){
-    buttoncontent=["2023 11th Biology Group Questions","2023 11th Computer Science Group Questions"]
+  else if(msg === "2024 11th Public Question paper and Answer"){
+    buttoncontent=["2024 11th Biology Group Questions","2024 11th Computer Science Group Questions"]
   }
-  else if(msg === "2023 11th Biology Group Questions"){   
+  else if(msg === "2024 11th Biology Group Questions"){   
+      len=1;
+      pd=["https://drive.google.com/file/d/1ASa5XX08CN_Bnd5jltMyOuaLQZpK5tvD/view"
+      ,"https://drive.google.com/file/d/1dXzKnasuVeTuFa0dKvf-JYOi5Oix1Er2/view"
+      ,"https://drive.google.com/file/d/1ayCMd7sFcuSfhp9bRZ-zSjtARRsu0dde/view"
+      ,"https://drive.google.com/file/d/10Q7ksBSAjXSV1leLk3385vYnrCbLxUWX/view"
+      ,"https://padasalai.info/wp-content/uploads/2024/03/11th-Maths-Public-Exam-March-2024-Original-Question-Paper-PDF-Download-1.pdf"
+      ,"https://padasalai.info/wp-content/uploads/2024/04/11th-Maths-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+      ,"https://drive.google.com/file/d/15UPjLuQ3e5qnuqLqvbN5pf76hICGuZKe/view"
+      ,"https://padasalai.info/wp-content/uploads/2024/03/11th-Physics-EM-Public-Exam-2024-Answer-Key-English-Medium-PDF-Download.pdf"
+      ,"https://drive.google.com/file/d/1_VNwJq6dd_ccH6elCpctEEfidEoCthiq/view"
+      ,"https://drive.google.com/file/d/1Ukg9bLtz2-4HIgjbf0Wckl1Xz7_gQ00y/view"
+      ,"https://drive.google.com/file/d/1BTSTwRD4oW58LXXID1pu_qyJG7fJ9YYr/view"
+      ,"https://drive.google.com/file/d/1Xobk_Uzt1WqlvcyKBtMAPZuRsd84eh88/view  "]
+      chat=["12th public Tamil Question 2024"
+      ,"11th public Tamil Answer 2024"
+      ,"11th public English Question 2024"
+      ,"11th public English Answer 2024"
+      ,"11th public Maths Question 2024"
+      ,"11th public Maths Answer 2024"
+      ,"11th public Physics Question 2024"
+      ,"11th public Physics Answer 2024"
+      ,"11th public Chemistry Question 2024"
+      ,"11th public Chemistry Answer 2024"
+      ,"11th public Biology Question 2024"
+      ,"11th public Biology Answer 2024"]
+    }
+    else if(msg === "2024 11th Computer Science Group Questions"){
+      len=1;
+      pd=["https://drive.google.com/file/d/1ASa5XX08CN_Bnd5jltMyOuaLQZpK5tvD/view"
+      ,"https://drive.google.com/file/d/1dXzKnasuVeTuFa0dKvf-JYOi5Oix1Er2/view"
+      ,"https://drive.google.com/file/d/1ayCMd7sFcuSfhp9bRZ-zSjtARRsu0dde/view"
+      ,"https://drive.google.com/file/d/10Q7ksBSAjXSV1leLk3385vYnrCbLxUWX/view"
+      ,"https://padasalai.info/wp-content/uploads/2024/03/11th-Maths-Public-Exam-March-2024-Original-Question-Paper-PDF-Download-1.pdf"
+      ,"https://padasalai.info/wp-content/uploads/2024/04/11th-Maths-Public-Exam-March-2024-Official-Answer-Key-English-Medium-PDF-Download.pdf"
+      ,"https://drive.google.com/file/d/15UPjLuQ3e5qnuqLqvbN5pf76hICGuZKe/view"
+      ,"https://padasalai.info/wp-content/uploads/2024/03/11th-Physics-EM-Public-Exam-2024-Answer-Key-English-Medium-PDF-Download.pdf"
+      ,"https://drive.google.com/file/d/1_VNwJq6dd_ccH6elCpctEEfidEoCthiq/view"
+      ,"https://drive.google.com/file/d/1Ukg9bLtz2-4HIgjbf0Wckl1Xz7_gQ00y/view"
+      ,"https://drive.google.com/file/d/17rRynmZJCo-bEKlbGcNz0gqJtNj1XpEa/view"
+      ,"https://drive.google.com/file/d/1VFuenv2H9-vJx4d8Xql8UlXoIYC5i1Q4/view"]
+
+      chat=["11th public Tamil Question 2024"
+      ,"11th public Tamil Answer 2024"
+      ,"11th public English Question 2024"
+      ,"11th public English Answer 2024"
+      ,"11th public Maths Question 2024"
+      ,"11th public Maths Answer 2024"
+      ,"11th public Physics Question 2024"
+      ,"11th public Physics Answer 2024"
+      ,"11th public Chemistry Question 2024"
+      ,"11th public Chemistry Answer 2024"
+      ,"11th public Computer Science Question 2024"
+      ,"11th public Computer Science Answer 2024"]
+    }
+    else if(msg === "2023 11th Public Question paper and Answer"){
+      buttoncontent=["2023 11th Biology Group Questions","2023 11th Computer Science Group Questions"];
+    }
+    else if(msg === "2023 11th Biology Group Questions"){   
       len=1;
       pd=["https://drive.google.com/file/d/1wJgKv7_qOxomS3I7O7t3vIVWbpLQ6hF7/view"
       ,"https://drive.google.com/file/d/1kzXbc6vPFYmUuMryV9WiVU1qpEXxmfsI/view"
@@ -491,31 +613,55 @@ else if(msg === "10th Social science Study Material"){
   chat="10th public Social science Guide"
 }
   else if(msg === "10th question paper"){
-    buttoncontent=["2023 10th Public Question paper and Answer","2022 10th Public Question paper and Answer"]
+    buttoncontent=["2024 10th Public Question paper and Answer","2023 10th Public Question paper and Answer","2022 10th Public Question paper and Answer"]
   }
-else if(msg === "2023 10th Public Question paper and Answer"){
+else if(msg === "2024 10th Public Question paper and Answer"){
   len=1; 
-  pd=["https://www.educationobserver.com/forum/attachment.php?aid=59664"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59661"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59671"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59672"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59682"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59683"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59698"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59699"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59718"
-  ,"https://www.educationobserver.com/forum/attachment.php?aid=59718"];
+  pd=["https://padasalai.info/wp-content/uploads/2024/03/10th-Tamil-Public-Exam-March-2024-Original-Question-Paper-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Tamil-Public-Exam-March-2024-Answer-Key-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/03/10th-English-Public-Exam-March-2024-Original-Question-Paper-PDF-Download-1.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-English-Public-Exam-March-2024-Official-Answer-key-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Maths-Public-Exam-April-2024-Original-Question-Paper-PDF-Download-1.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Maths-Public-Exam-April-2024-Answer-Key-English-Medium-PDF-Download-1.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Science-Public-Exam-April-2024-Original-Question-Paper-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Science-Public-Exam-April-2024-Answer-Key-English-Medium-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Social-Science-Public-Exam-April-2024-Original-Question-Paper-PDF-Download.pdf"
+  ,"https://padasalai.info/wp-content/uploads/2024/04/10th-Social-Science-Public-Exam-April-2024-Answer-Key-English-Medium-PDF-Download.pdf"];
 
-  chat=["10th public Tamil Question 2023"
-  ,"10th public Tamil Answer 2023"
-  ,"10th public English Question 2023"
-  ,"10th public English Answer 2023"
-  ,"10th public Maths Question 2023"
-  ,"10th public Maths Answer 2023"
-  ,"10th public science Question 2023"
-  ,"10th public science Answer 2023"
-  ,"10th public social science Question 2023"
-  ,"10th public social science Answer 2023"]
+  chat=["10th public Tamil Question 2024"
+  ,"10th public Tamil Answer 2024"
+  ,"10th public English Question 2024"
+  ,"10th public English Answer 2024"
+  ,"10th public Maths Question 2024"
+  ,"10th public Maths Answer 2024"
+  ,"10th public science Question 2024"
+  ,"10th public science Answer 2024"
+  ,"10th public social science Question 2024"
+  ,"10th public social science Answer 2024"]
+}
+else if(msg === "2023 10th Public Question paper and Answer"){
+len=1; 
+pd=["https://www.educationobserver.com/forum/attachment.php?aid=59664"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59661"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59671"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59672"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59682"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59683"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59698"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59699"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59718"
+,"https://www.educationobserver.com/forum/attachment.php?aid=59718"];
+
+chat=["10th public Tamil Question 2023"
+,"10th public Tamil Answer 2023"
+,"10th public English Question 2023"
+,"10th public English Answer 2023"
+,"10th public Maths Question 2023"
+,"10th public Maths Answer 2023"
+,"10th public science Question 2023"
+,"10th public science Answer 2023"
+,"10th public social science Question 2023"
+,"10th public social science Answer 2023"]
 }
 else if(msg === "2022 10th Public Question paper and Answer"){
   len=1;
