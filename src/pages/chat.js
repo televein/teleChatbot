@@ -704,7 +704,7 @@ else  {
     var str = inputField.value;
     var text = str.toLowerCase();
     display(text);
-    if(text === "hi"){
+    if(text === "hi" || text === "hai" || text === "hello"){
       chat="Hello "+storedValue+", How can I assist you today?";
       btn="Smart Intract";
     }
