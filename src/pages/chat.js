@@ -696,14 +696,14 @@ else  {
   //   });
   //   chat = completion.data.choices[0].text;
   // };
-  function handleInput(event) {
+  async function handleInput(event) {
     event.preventDefault();
     let btn;
     const inputField = document.getElementById("input-field");
     // Add the user input to the conversation.
     var str = inputField.value;
     var text = str.toLowerCase();
-    display(text);
+    await display(text);
     if(text === "hi" || text === "hai" || text === "hello"){
       chat="Hello "+storedValue+", How can I assist you today?";
       btn="Smart Intract";
