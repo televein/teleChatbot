@@ -19,6 +19,25 @@ const Chatbot = () => {
   // const [botResponse, setBotResponse] = useState('');
   const storedValue = localStorage.getItem('storageName');
 
+  const generateResponse = async (prompt) => {  
+    try {
+      const response = await fetch('https://telechat-api-server.onrender.com/api/generate', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({   
+   prompt })
+      });
+  
+      const data = await response.json();
+      console.log(data.response);   
+      return data.response;
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
   var chat;
   const date = new Date();
   let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
@@ -35,7 +54,7 @@ const Chatbot = () => {
     );
   }
 
-function display(text) {
+async function display(text) {
 if(text.indexOf("hi" ) !== -1 ||text.indexOf("hello") !== -1 ||text.indexOf("hai") !== -1 ||text.indexOf("hey") !== -1)
 {
  //  btn("Hello! How can I assist you today?" ,h,i(   ;
@@ -663,8 +682,9 @@ else if(text.indexOf("year") !== -1 ){
 //   chat = result.toString()   
 // }
 else  {
-  chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
+  //chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
    // apiResponse(text);
+  chat = await generateResponse(text);
 }
 }
   // async function apiResponse(text){
