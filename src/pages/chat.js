@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "./stylechat.css";
 import ChatbotMessage from "./chatbot";
 import send from "./images/send-message.png";
-import televein from "./images/televein.png";
+import televein from "./images/vsb.png";
 import Contact from "./images/chatbot-contact.png";
 
 const Chatbot = () => {
