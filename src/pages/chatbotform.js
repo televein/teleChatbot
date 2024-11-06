@@ -22,7 +22,7 @@ const ChatbotForm = () => {
       <div className="fullbody">
         <div className="container">
         <form onSubmit={handleSubmit} action="/chatbot/index.html" method="get">
-          <h1 className="headform">Welcome to TELE Chatbot</h1>
+          <h1 className="headform">Welcome to VSBEC-IT</h1>
           <label>Enter your name:</label>
           <input
             type="text"
