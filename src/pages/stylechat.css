@@ -121,7 +121,7 @@ message-container {
 .chatbot-text {
   background-color: white;
   color: #333333;
-  font-size: 1.1em;
+  font-size: 14px;
   padding: 15px;
   border-radius: 5px 15px 15px 15px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -187,7 +187,7 @@ message-container {
   background-color: rgb(42,42,150);
   color: white;
   font-family: "Lucida Console", "Courier New", monospace;
-  font-size: 1.1em;
+  font-size: 14px;
   padding: 15px;
   border-radius: 5px 20px 20px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
