@@ -31,8 +31,17 @@ const Chatbot = () => {
       });
   
       const data = await response.json();
-      console.log(data.response);   
-      return data.response;
+      let modifiedResponse = data.response;
+
+      modifiedResponse = modifiedResponse.replace(/^\* (.+)$/gm, '<h2 style="font-size: 16px; font-weight: bold;">$1</h2>'); // For lines with "*" at the beginning
+  
+      modifiedResponse = modifiedResponse.replace(/\*\*(.+?)\*\*/g, '<h2 style="font-size: 16px; font-weight: bold;">$1</h2>'); // For text wrapped in "**"
+  
+      modifiedResponse = modifiedResponse.replace(/([^\*\n][^\n]*)(?=\n|$)/g, (match) => {
+        return `<p style="font-size: 14px;">${match.trim()}</p>`;
+      });
+      console.log(modifiedResponse);
+      return modifiedResponse;
     } catch (error) {
       console.error('Error:', error);
     }
