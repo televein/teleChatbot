@@ -747,7 +747,7 @@ console.log(conversation)
         <div id="header">
             <h1>
                 <img className="head-img" src={televein} alt="" />
-                <strong id="vsb">TELE Chat Bot</strong>
+                <strong id="vsb">VSBEC IT</strong>
             </h1>
         </div>
           {discription()}
