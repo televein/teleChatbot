@@ -7,7 +7,7 @@ const botmsg = ({ bot_message ,sentTime}) => {
    <div className="chat-inp">
      <img src={chatbotImage} className="input-image" alt=""/>
      <p className="chatbot-text" senttime={sentTime}>
-       <span>{bot_message}</span>
+       <span dangerouslySetInnerHTML={{ __html: bot_message }} />
      </p>
    </div>
  </div>
