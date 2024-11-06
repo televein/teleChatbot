@@ -594,87 +594,87 @@ else if(text.indexOf("12" ) !== -1 &&(text.indexOf("question"  ) !== -1 ||text.i
     ,"https://drive.google.com/file/d/1rNg5GV9AGd3VnRUsVnOvGD-8Rz60y9wE/view?usp=sharing"]  
  }
 }
-else  if((text.indexOf("12"  ) !== -1 ||text.indexOf("public")  !== -1) && ((text.indexOf("prepare") !== -1 ||text.indexOf("preparation")  !== -1 )||(text.indexOf("good"  ) !== -1 ||text.indexOf("more" ) !== -1)) &&text.indexOf("marks") !== -1){
- if(text.indexOf("tamil"   ) !== -1 ){
-   chat = ["படிக்க திட்டம் உருவாக்குக:\n1.அனைத்து பாடங்களும் மற்றும் பாடகங்களை சேர்ந்த விரிவான படிக்க திட்டம் உருவாக்குக.\n2.நீங்கள் கடினமாகக் கணிக்கும் பாடங்களுக்கு அதிக நேரம் ஒதுக்கவும்.\n3.சேர்ந்த நேரங்களில் முகநூல் சூழ்நிலைகளை தடுக்க உத்தமமான நேர ஒதுக்கவும்."   
-   ,"பாடங்களை முன்னின்னும் பதிவிடுக:\n1.தேர்வுகளில் அதிக புரியும் பாடங்களை அதிக பதிவிடுக.\n2.நீங்கள் விசித்திரமாக கணிக்கும் பாடங்களுக்கு அதிக படிக்க நேரம் அளிக்கவும்."   
-   ,"குறிப்பாக்குகள் உள்ளன:\n1.ஒவ்வொரு படிக்க அமைக்கும் விரிவான, அதிசாரிய குறிப்புகளை அமைக்கும். உ஦ாகமாக, ஒரு குறிப்பு அல்லது பழைய வருடங்களின் கேள்விகளை பரிசோதிக்க."   
-   ,"பாடப் படிப்பை மொழியாக்குக:\n1.புரியும் அவதாரம் அமைத்து அதை சுட்டிக்காட்டுவதைக் குறைக்க அல்லது சக மாணவர்களுடன் விவாதிக்கும் வழிகளை பயன்படுத்த முயற்சிக்கவும்."   
-   ,"தானியங்கி கழிக்கவும்:\n1.செயற்கை கற்பிக்கும் முறைகள் புரிந்து படியை அமைத்து உள்ளிட்டு அறிந்து கொள்ள உத்தமமாகும்.\n2.கடைசியில் வருவாய் சேர்ந்த பரீட்சை கேள்விப் பேப்பர்கள் மற்றும் மாதிரி பேப்பர்களை பயிற்சிக்க தயாரிக்கவும்."   
-   ,"தவறு பண்ணாதிருக்க:\n1.படித்து அளிக்கும் நேரங்களை அறிந்து கொள்ளுங்கள் மற்றும் படிக்க பயன்படுத்த வாய்ப்புகளை குறைக்க உத்தமமாக நீங்கள் செய்ய முயற்சிக்கவும்.\n2.படிக்குழுக்களைத் தேர்வுச் செய்ய பரிசோதித்து அந்தக் கேள்விகளை வெளியிட விடாமல் செய்யுங்கள்."   
-   ,"நித்தியமாக உடைய:\n1.படிக்க தேர்வுகளுக்கு சரியாக உடைய, பலான உணவுகளை சேவிக்க உடையதாக்குங்கள்.\n2.உடையதாக்க மற்றும் சுவிசேஷமாக விரிக்கவும், அமைந்திருக்க உத்தமமாக குடிகாப்பது படிக்க மற்றும் அறிவு குதிக்க உத்தமமாக இருக்கும்."   
-   ,"தொழில்நுட்பம்:\n1.உற்சாகமாக போக்குக்கள், பணியாக்குக்கள், மற்றும் உணவை குறிக்க உத்தமமாக அளிக்குக உத்தமமான முயற்சியைச் செய்யுங்கள்."   
-   ,"அன்பை கேட்க போக:\n1.ஒரு குறிப்பை பார்த்து சிரிக்கும்போது, உங்கள் ஆசிரியர்கள் அல்லது வகுப்புப் பக்கங்கள் உங்கள் உத்தமமான அலைக்கு உத்தமமாக உத்தமமாக உத்தமமாக அனுப்புகின்றனர்.\n2.படிக்க குழுக்களுக்கு சேர்ந்து விவாதிக்க மற்றும் சந்தேகங்களை விளக்கவும்." 
-   ,"கோடித்துக்காட்டு:\n1.தடுத்த படிக்க நேரங்களில் சரியாக கோடித்துக்காட்டிகளை அநுப்பவும்.\n2.நீங்கள் சொல்வதில் அநிர்ணயம் இருக்கும்போது, அந்த கேள்வியை விடுங்கள், பின்னர் நேரம் அநுப்ப முடியும் படிக்க முடியும்."  
-   ,"சந்திப்புக்களை நிர்வகிக்க:\n1.உண்டாகின்ற தேர்வுகளில் நிர்வகிக்க போக்கிலும் கோடித்துக்காட்டுக்களை செய்ய வேண்டிய நேரம் உள்ளிட்டுக் கொள்ளுங்கள்.\n2.நீங்கள் ஒரு கேள்வியின் பரிசோதனையில் நம ்பிக்கை கொண்டிருக்கலாம், அதை நெருங்கி செய்யுங்கள்" 
-   ,"செய்ய அந்தக் கடிதத்தில் அந்தக் கேள்வியிற்கு நம்பிக்கை கொண்டிருக்கவில்லை:\n1.உண்டாகின்ற தேர்வில், ஒவ்வொரு பிரிவு அல்லது கேள்விக்குக் கோடித்துக்காட்டுங்கள்.\n2.நீங்கள் அநிதிக்கு சொல்லாக இருக்காதீர்கள், பின்னர் அந்தக் கேள்விக்கு வரல் செய்ய வாய்ப்பு உள்ளிட்டு செய்யுங்கள்." ]
-   }
- else{
-   chat = "Create a Study Schedule:\n1.Make a detailed study schedule that covers all subjects and topics.\n2.Allocate more time to subjects or topics you find challenging.\n3.Include breaks in your schedule to avoid burnout.\n\n\n Prioritize Subjects:\n1.Identify the subjects that carry more weight in the exams and focus on them first.\n2.Allocate more study time to subjects you are less confident in.\n\n\n Set Specific Goals:\n1.Set clear, achievable goals for each study session. For example, complete a specific chapter or solve a set of practice questions.\n\n\n Break Down the Syllabus:\n1.Divide the syllabus into manageable sections or chapters.\n2.Focus on completing one section before moving on to the next.\n\n\n Use Effective Study Techniques:\n1.Active learning techniques like summarizing, teaching, or discussing topics with peers can enhance understanding.\n2.Practice previous years' question papers and sample papers to get a sense of the exam pattern.\n\n\n Avoid Procrastination:\n1.Identify your most productive study times and schedule difficult subjects during these hours.\n2.Minimize distractions, such as turning off social media and mobile notifications while studying.\n\n\nTake Regular Breaks:\n1.Short breaks between study sessions can help improve focus and prevent burnout.\n2.Use techniques like the Pomodoro method (25 minutes of focused study followed by a 5-minute break .\n\n\nStay Healthy:\n1.Get enough sleep, eat balanced meals, and stay hydrated to ensure your mind and body are in optimal condition for studying.\n\n\nRevise Regularly:\n1.Plan time for revision in your schedule, as revision is essential for retention.\n2.Create flashcards or summary notes for quick revision\n\n\n Seek Help When Needed:\n1.If you're struggling with a particular topic, don't hesitate to ask your teachers or classmates for help.\n2.Consider joining study groups to discuss and clarify doubts.\n\n\n Practice Time Management During the Exam:\n1.During the actual exam, allocate time wisely to each section or question.\n2.If you're unsure about a question, move on and come back to it later if time permits.\n\n\nStay Positive and Manage Stress:\n1.Maintain a positive mindset and believe in your abilities.\n2.Practice relaxation techniques like deep breathing and meditation to manage exam-related stress."   
-   }
-}//
-else if (text.indexOf("college"   ) !== -1 ){
- if(text.indexOf("tn"   ) !== -1 ){
-    link ="/chatbot/pdf/Tamil Nadu Top College list.pdf"   ;
-    chat = "Tamil Nadu Top College list"   
- }
- else if(text.indexOf("india"  ) !== -1 ||text.indexOf("ind"   ) !== -1 ){
-    link ="/chatbot/pdf/India Top College list.pdf";
-    chat = "India Top College list"   
- }
- else  {
-    chat = "which college do you prepare ?\n\t1.Engineering College\n\t2.Medical College\n\t3.Arts and Science College"   ; 
- }
-}
-else if(text.indexOf("vsb"  ) !== -1 ||text.indexOf("v.s.b"   ) !== -1 ){
-  chat = "V.S.B. Educational Trust was founded in the year 2000 by Mr. V.S. Balsamy, the founder and correspondent of the V.S.B. Engineering College, with an interest in promoting, managing and administrating educational institutions with high academic standards, discipline and to take up and help other allied activities in the field of education. Under the Trust, V.S.B. Engineering College,Karur was established in the year 2002 and V.S.B College of Engineering Technical Campus,Coimbatore in the year 2012."   
-}
-else if((text.indexOf("kalam"  ) !== -1 ||text.indexOf("a.p.j" )  !== -1 )&&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day") !== -1 ) ){
-  chat = "15 October 1931"   
-}
-else if(text.indexOf("sachin" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
-  chat = "24 April 1973"   
-}
-else if(text.indexOf("vijay" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
-  chat = "22 June 1974"   
-}
-else if(text.indexOf("ajith" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
-  chat = "1 May 1971"   
-}
-else if(text.indexOf("kamarajar" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day" )  !== -1) ){
-  chat = "15 July 1903"   
-}
-else if(text.indexOf("date") !== -1 || (text.indexOf("today" ) !== -1 &&text.indexOf("date")  !== -1 )){
-  chat = currentDate ;  
-}
-else if(text.indexOf("time"  ) !== -1 ||text.indexOf("currenttime"   ) !== -1 ){
-  chat = currentTime ;
-}
-else if(text.indexOf("day"   ) !== -1 ){
-  switch(date.getDay()){
-   case 1:
-     chat = "Monday" ;
-     break;
-   case 2:
-     chat = "Tuesday" ;
-     break;
-   case 3:
-     chat = "Wednesday" ;
-     break;
-   case 4:
-     chat = "Thursday" ;
-     break;
-   case 5:
-     chat = "Friday" ;
-     break;
-   case 6:
-     chat = "saturday" ;
-     break;
-   default:
-     chat = "Sunday" ;
-     break;
-}  
-}
+// else  if((text.indexOf("12"  ) !== -1 ||text.indexOf("public")  !== -1) && ((text.indexOf("prepare") !== -1 ||text.indexOf("preparation")  !== -1 )||(text.indexOf("good"  ) !== -1 ||text.indexOf("more" ) !== -1)) &&text.indexOf("marks") !== -1){
+//  if(text.indexOf("tamil"   ) !== -1 ){
+//    chat = ["படிக்க திட்டம் உருவாக்குக:\n1.அனைத்து பாடங்களும் மற்றும் பாடகங்களை சேர்ந்த விரிவான படிக்க திட்டம் உருவாக்குக.\n2.நீங்கள் கடினமாகக் கணிக்கும் பாடங்களுக்கு அதிக நேரம் ஒதுக்கவும்.\n3.சேர்ந்த நேரங்களில் முகநூல் சூழ்நிலைகளை தடுக்க உத்தமமான நேர ஒதுக்கவும்."   
+//    ,"பாடங்களை முன்னின்னும் பதிவிடுக:\n1.தேர்வுகளில் அதிக புரியும் பாடங்களை அதிக பதிவிடுக.\n2.நீங்கள் விசித்திரமாக கணிக்கும் பாடங்களுக்கு அதிக படிக்க நேரம் அளிக்கவும்."   
+//    ,"குறிப்பாக்குகள் உள்ளன:\n1.ஒவ்வொரு படிக்க அமைக்கும் விரிவான, அதிசாரிய குறிப்புகளை அமைக்கும். உ஦ாகமாக, ஒரு குறிப்பு அல்லது பழைய வருடங்களின் கேள்விகளை பரிசோதிக்க."   
+//    ,"பாடப் படிப்பை மொழியாக்குக:\n1.புரியும் அவதாரம் அமைத்து அதை சுட்டிக்காட்டுவதைக் குறைக்க அல்லது சக மாணவர்களுடன் விவாதிக்கும் வழிகளை பயன்படுத்த முயற்சிக்கவும்."   
+//    ,"தானியங்கி கழிக்கவும்:\n1.செயற்கை கற்பிக்கும் முறைகள் புரிந்து படியை அமைத்து உள்ளிட்டு அறிந்து கொள்ள உத்தமமாகும்.\n2.கடைசியில் வருவாய் சேர்ந்த பரீட்சை கேள்விப் பேப்பர்கள் மற்றும் மாதிரி பேப்பர்களை பயிற்சிக்க தயாரிக்கவும்."   
+//    ,"தவறு பண்ணாதிருக்க:\n1.படித்து அளிக்கும் நேரங்களை அறிந்து கொள்ளுங்கள் மற்றும் படிக்க பயன்படுத்த வாய்ப்புகளை குறைக்க உத்தமமாக நீங்கள் செய்ய முயற்சிக்கவும்.\n2.படிக்குழுக்களைத் தேர்வுச் செய்ய பரிசோதித்து அந்தக் கேள்விகளை வெளியிட விடாமல் செய்யுங்கள்."   
+//    ,"நித்தியமாக உடைய:\n1.படிக்க தேர்வுகளுக்கு சரியாக உடைய, பலான உணவுகளை சேவிக்க உடையதாக்குங்கள்.\n2.உடையதாக்க மற்றும் சுவிசேஷமாக விரிக்கவும், அமைந்திருக்க உத்தமமாக குடிகாப்பது படிக்க மற்றும் அறிவு குதிக்க உத்தமமாக இருக்கும்."   
+//    ,"தொழில்நுட்பம்:\n1.உற்சாகமாக போக்குக்கள், பணியாக்குக்கள், மற்றும் உணவை குறிக்க உத்தமமாக அளிக்குக உத்தமமான முயற்சியைச் செய்யுங்கள்."   
+//    ,"அன்பை கேட்க போக:\n1.ஒரு குறிப்பை பார்த்து சிரிக்கும்போது, உங்கள் ஆசிரியர்கள் அல்லது வகுப்புப் பக்கங்கள் உங்கள் உத்தமமான அலைக்கு உத்தமமாக உத்தமமாக உத்தமமாக அனுப்புகின்றனர்.\n2.படிக்க குழுக்களுக்கு சேர்ந்து விவாதிக்க மற்றும் சந்தேகங்களை விளக்கவும்." 
+//    ,"கோடித்துக்காட்டு:\n1.தடுத்த படிக்க நேரங்களில் சரியாக கோடித்துக்காட்டிகளை அநுப்பவும்.\n2.நீங்கள் சொல்வதில் அநிர்ணயம் இருக்கும்போது, அந்த கேள்வியை விடுங்கள், பின்னர் நேரம் அநுப்ப முடியும் படிக்க முடியும்."  
+//    ,"சந்திப்புக்களை நிர்வகிக்க:\n1.உண்டாகின்ற தேர்வுகளில் நிர்வகிக்க போக்கிலும் கோடித்துக்காட்டுக்களை செய்ய வேண்டிய நேரம் உள்ளிட்டுக் கொள்ளுங்கள்.\n2.நீங்கள் ஒரு கேள்வியின் பரிசோதனையில் நம ்பிக்கை கொண்டிருக்கலாம், அதை நெருங்கி செய்யுங்கள்" 
+//    ,"செய்ய அந்தக் கடிதத்தில் அந்தக் கேள்வியிற்கு நம்பிக்கை கொண்டிருக்கவில்லை:\n1.உண்டாகின்ற தேர்வில், ஒவ்வொரு பிரிவு அல்லது கேள்விக்குக் கோடித்துக்காட்டுங்கள்.\n2.நீங்கள் அநிதிக்கு சொல்லாக இருக்காதீர்கள், பின்னர் அந்தக் கேள்விக்கு வரல் செய்ய வாய்ப்பு உள்ளிட்டு செய்யுங்கள்." ]
+//    }
+//  else{
+//    chat = "Create a Study Schedule:\n1.Make a detailed study schedule that covers all subjects and topics.\n2.Allocate more time to subjects or topics you find challenging.\n3.Include breaks in your schedule to avoid burnout.\n\n\n Prioritize Subjects:\n1.Identify the subjects that carry more weight in the exams and focus on them first.\n2.Allocate more study time to subjects you are less confident in.\n\n\n Set Specific Goals:\n1.Set clear, achievable goals for each study session. For example, complete a specific chapter or solve a set of practice questions.\n\n\n Break Down the Syllabus:\n1.Divide the syllabus into manageable sections or chapters.\n2.Focus on completing one section before moving on to the next.\n\n\n Use Effective Study Techniques:\n1.Active learning techniques like summarizing, teaching, or discussing topics with peers can enhance understanding.\n2.Practice previous years' question papers and sample papers to get a sense of the exam pattern.\n\n\n Avoid Procrastination:\n1.Identify your most productive study times and schedule difficult subjects during these hours.\n2.Minimize distractions, such as turning off social media and mobile notifications while studying.\n\n\nTake Regular Breaks:\n1.Short breaks between study sessions can help improve focus and prevent burnout.\n2.Use techniques like the Pomodoro method (25 minutes of focused study followed by a 5-minute break .\n\n\nStay Healthy:\n1.Get enough sleep, eat balanced meals, and stay hydrated to ensure your mind and body are in optimal condition for studying.\n\n\nRevise Regularly:\n1.Plan time for revision in your schedule, as revision is essential for retention.\n2.Create flashcards or summary notes for quick revision\n\n\n Seek Help When Needed:\n1.If you're struggling with a particular topic, don't hesitate to ask your teachers or classmates for help.\n2.Consider joining study groups to discuss and clarify doubts.\n\n\n Practice Time Management During the Exam:\n1.During the actual exam, allocate time wisely to each section or question.\n2.If you're unsure about a question, move on and come back to it later if time permits.\n\n\nStay Positive and Manage Stress:\n1.Maintain a positive mindset and believe in your abilities.\n2.Practice relaxation techniques like deep breathing and meditation to manage exam-related stress."   
+//    }
+// }//
+// else if (text.indexOf("college"   ) !== -1 ){
+//  if(text.indexOf("tn"   ) !== -1 ){
+//     link ="/chatbot/pdf/Tamil Nadu Top College list.pdf"   ;
+//     chat = "Tamil Nadu Top College list"   
+//  }
+//  else if(text.indexOf("india"  ) !== -1 ||text.indexOf("ind"   ) !== -1 ){
+//     link ="/chatbot/pdf/India Top College list.pdf";
+//     chat = "India Top College list"   
+//  }
+//  else  {
+//     chat = "which college do you prepare ?\n\t1.Engineering College\n\t2.Medical College\n\t3.Arts and Science College"   ; 
+//  }
+// }
+// else if(text.indexOf("vsb"  ) !== -1 ||text.indexOf("v.s.b"   ) !== -1 ){
+//   chat = "V.S.B. Educational Trust was founded in the year 2000 by Mr. V.S. Balsamy, the founder and correspondent of the V.S.B. Engineering College, with an interest in promoting, managing and administrating educational institutions with high academic standards, discipline and to take up and help other allied activities in the field of education. Under the Trust, V.S.B. Engineering College,Karur was established in the year 2002 and V.S.B College of Engineering Technical Campus,Coimbatore in the year 2012."   
+// }
+// else if((text.indexOf("kalam"  ) !== -1 ||text.indexOf("a.p.j" )  !== -1 )&&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day") !== -1 ) ){
+//   chat = "15 October 1931"   
+// }
+// else if(text.indexOf("sachin" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
+//   chat = "24 April 1973"   
+// }
+// else if(text.indexOf("vijay" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
+//   chat = "22 June 1974"   
+// }
+// else if(text.indexOf("ajith" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day"    ) !== -1 ) ){
+//   chat = "1 May 1971"   
+// }
+// else if(text.indexOf("kamarajar" ) !== -1 &&text.indexOf("birth" ) !== -1 &&(text.indexOf("date"  ) !== -1 ||text.indexOf("day" )  !== -1) ){
+//   chat = "15 July 1903"   
+// }
+// else if(text.indexOf("date") !== -1 || (text.indexOf("today" ) !== -1 &&text.indexOf("date")  !== -1 )){
+//   chat = currentDate ;  
+// }
+// else if(text.indexOf("time"  ) !== -1 ||text.indexOf("currenttime"   ) !== -1 ){
+//   chat = currentTime ;
+// }
+// else if(text.indexOf("day"   ) !== -1 ){
+//   switch(date.getDay()){
+//    case 1:
+//      chat = "Monday" ;
+//      break;
+//    case 2:
+//      chat = "Tuesday" ;
+//      break;
+//    case 3:
+//      chat = "Wednesday" ;
+//      break;
+//    case 4:
+//      chat = "Thursday" ;
+//      break;
+//    case 5:
+//      chat = "Friday" ;
+//      break;
+//    case 6:
+//      chat = "saturday" ;
+//      break;
+//    default:
+//      chat = "Sunday" ;
+//      break;
+// }  
+// }
 else if(text.indexOf("month"   ) !== -1 ){
   var month = date.getMonth() +1 ;
   chat = month.toString(); 
