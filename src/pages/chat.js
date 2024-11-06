@@ -37,7 +37,7 @@ const Chatbot = () => {
   
       modifiedResponse = modifiedResponse.replace(/\*\*(.+?)\*\*/g, '<h2 style="font-size: 16px; font-weight: bold;">$1</h2>'); // For text wrapped in "**"
   
-      modifiedResponse = modifiedResponse.replace(/([^\*\n][^\n]*)(?=\n|$)/g, (match) => {
+      modifiedResponse = modifiedResponse.replace(/([^\n][^\n]*)(?=\n|$)/g, (match) => {
         return `<p style="font-size: 14px;">${match.trim()}</p>`;
       });
       console.log(modifiedResponse);
@@ -49,8 +49,8 @@ const Chatbot = () => {
 
   var chat;
   const date = new Date();
-  let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
-  const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
+  //let currentDate = `${date.getDate()}-${date.getMonth()+1}-${date.getFullYear()}`;
+  //const currentTime = new Date().toLocaleTimeString([], { hour: '2-digit', minute: "2-digit" });
   let link,len;
   // function evalExpression(expression) {
   //   // Use parseFloat to safely evaluate the expression
