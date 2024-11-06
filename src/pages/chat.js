@@ -64,11 +64,7 @@ const Chatbot = () => {
   }
 
 async function display(text) {
-if(text.indexOf("hi" ) !== -1 ||text.indexOf("hello") !== -1 ||text.indexOf("hai") !== -1 ||text.indexOf("hey") !== -1)
-{
- //  btn("Hello! How can I assist you today?" ,h,i(   ;
-}
-else if(text.indexOf("televein") !== -1 || text.indexOf("tele vein") !== -1){
+if(text.indexOf("televein") !== -1 || text.indexOf("tele vein") !== -1){
   len =1;
   chat = ["Tele Vein is a technology oriented Company."   ,
           "For more about televein.I provide thier //link below." ]  ;
