@@ -41,7 +41,7 @@ const Chatbot = () => {
         return `<p style="font-size: 14px;">${match.trim()}</p>`;
       });
       console.log(modifiedResponse);
-      chat = "modifiedResponse";
+      chat = modifiedResponse;
     } catch (error) {
       console.error('Error:', error);
     }
