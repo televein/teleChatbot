@@ -41,7 +41,7 @@ const Chatbot = () => {
         return `<p style="font-size: 14px;">${match.trim()}</p>`;
       });
       console.log(modifiedResponse);
-      return modifiedResponse;
+      chat = "modifiedResponse";
     } catch (error) {
       console.error('Error:', error);
     }
@@ -63,7 +63,7 @@ const Chatbot = () => {
     );
   }
 
-async function display(text) {
+function display(text) {
 if(text.indexOf("televein") !== -1 || text.indexOf("tele vein") !== -1){
   len =1;
   chat = ["Tele Vein is a technology oriented Company."   ,
@@ -367,7 +367,7 @@ else if(text.indexOf( "ece"  ) !== -1 ||text.indexOf("electrical and communicati
 else{
   chat = "ECE can stand for different things depending on the context. In the context of education and engineering, ECE commonly refers to 'Electrical and Computer Engineering.' This is a branch of engineering that combines aspects of electrical engineering and computer science."   
 }}
-else if(text.indexOf("ai"  ) !== -1 ||text.indexOf("artificial intelligence"   ) !== -1 ){
+else if(text.indexOf("artificial intelligence"   ) !== -1 ){
 if(text.indexOf("scope"  ) !== -1 ||text.indexOf("value"    ) !== -1 ){
   len =1;
   chat = ["Automation and Robotics"   
@@ -551,7 +551,7 @@ else if(text.indexOf("12" ) !== -1 &&(text.indexOf("question"  ) !== -1 ||text.i
     chat = ["12th public Zoology Question 2023"   
     ,"12th public Zoology Answer 2023"]
  }
- else if(text.indexOf("cs"  ) !== -1 ||text.indexOf("computer science"   ) !== -1 ){
+ else if(text.indexOf("computer science"   ) !== -1 ){
   len=1;
     link =["https://drive.google.com/file/d/11GNAAN340DRpmZ1MO5ft5sMbq7rJ3vr5/view?usp=drivesdk"  
     ,"https://drive.google.com/file/d/1rNg5GV9AGd3VnRUsVnOvGD-8Rz60y9wE/view?usp=sharing"]
@@ -689,7 +689,7 @@ else if(text.indexOf("year") !== -1 ){
 else  {
   //chat = "The Material You asked is not Available,Kindly Contact us using the 'Bot' Button and get You your Material";
    // apiResponse(text);
-  chat = await generateResponse(text);
+  chat = "";
 }
 }
   // async function apiResponse(text){
@@ -708,7 +708,8 @@ else  {
     // Add the user input to the conversation.
     var str = inputField.value;
     var text = str.toLowerCase();
-    await display(text);
+    display(text);
+    if(chat === ""){await generateResponse(text)}
     if(text === "hi" || text === "hai" || text === "hello"){
       chat="Hello "+storedValue+", How can I assist you today?";
       btn="Smart Intract";
