@@ -106,7 +106,7 @@ message-container {
   line-height: 20px;
   border-radius: 20px;
   word-wrap: break-word;
-  white-space: pre-wrap;
+/*   white-space: pre-wrap; */
   max-width: 100%;
   gap: 5px;
   padding: 0 15px;
@@ -191,6 +191,11 @@ message-container {
   padding: 15px;
   border-radius: 5px 20px 20px 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chatbot-text p, .chatbot-text h2{
+  margin: 0;
+  padding: 0;
 }
 
 #input-form {
