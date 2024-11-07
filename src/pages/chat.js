@@ -123,12 +123,7 @@ else if(text.indexOf("jee"   ) !== -1 ){
   //  a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
     //link(a)   
  }
- else if(text.indexOf("jee" ) !== -1 &&(text.indexOf("when"  ) !== -1 ||text.indexOf("date"   ) !== -1 ||text.indexOf("exam") !== -1 ) ){
-  len=1;  
-  chat = ["Session 1 - January 24 to February 1, 2024 \nSession 2 - April 1 to April 15, 2024"   
-    ,"DISCLAIMER:There may be change will occur , so please visit the official website for updates :"]  
-  //  a = "<a href='https://jeemain.nta.nic.in'>nta.in</a>" 
- }
+
  else if(text.indexOf("jee" ) !== -1 &&(text.indexOf("fee"  ) !== -1 ||text.indexOf("cost") !== -1 ) ){
     chat = ["The Appilcation fee for JEE exam is divided into different category"   
     ,"For Indian Nationals\n\n1.Female Candidates (all categories  -₹ 1450.\n2.SC, ST, and PwD Candidates -₹ 1450.\n3.All Other Candidates -₹ 2900."   
@@ -178,13 +173,13 @@ else if(text.indexOf("neet") !== -1 ){
     ,"BHMS"   
     ,"BSMS"   
     ,"BVSc"   
-    ,"Visit their Official web site for further queries :"]  
+    ]  
   //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("conduct"  ) !== -1 ||text.indexOf("organize") !== -1 ) ){
-  len=1;  
-  chat = ["NEET is conducted by National Testing Agency(NTA) "   
-    ,"Visit their Official web site for further queries :" ] 
+ 
+  chat = "NEET is conducted by National Testing Agency(NTA) "   ;
+    
   //  a = "<a href='https://neet.nta.nic.in'>nta.in</a>"
  }
  else if(text.indexOf("neet" ) !== -1 &&(text.indexOf("when"  ) !== -1 ||text.indexOf("date"   ) !== -1 ||text.indexOf("exam"   ) !== -1 ) ){
@@ -490,6 +485,7 @@ else if(text.indexOf( "12" ) !== -1 && text.indexOf( "book") !== -1 ){
   "12th Botany Book",
   "12th Zoology Book" ]; 
 }
+  
 }
 else if(text.indexOf("12" ) !== -1 &&(text.indexOf("question"  ) !== -1 ||text.indexOf("exam"  ) !== -1 ||text.indexOf("answer"   )  !== -1 )){
  if(text.indexOf("tamil") !== -1 ){
