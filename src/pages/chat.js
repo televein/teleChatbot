@@ -21,7 +21,7 @@ const Chatbot = () => {
 
   const generateResponse = async (prompt) => {  
     try {
-      const response = await fetch('https://telechat-api-server.onrender.com/api/generate', {
+      const response = await fetch('https://chat-server-uy38.onrender.com/api/generate', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
