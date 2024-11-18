@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import ChatbotForm from './pages/chatbotform';
 import Chat from './pages/chat';
-import Chat from './pages/game';
+import Game from './pages/game';
 import Contact from './pages/contact';
 
 
