@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./stylechat.css";
 import ChatbotMessage from "./chatbot";
@@ -735,7 +735,27 @@ console.log(conversation)
     conversationElement.scrollTop = conversationElement.scrollHeight;
   }, [conversation]);
     
+  const [isHovered, setIsHovered] = useState(false);
+  const [hoveredCircle, setHoveredCircle] = useState(null);
+  const hoverTimeout = useRef(null);
 
+  const handleMouseEnter = () => {
+    clearTimeout(hoverTimeout.current); // Cancel any pending hide action
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    hoverTimeout.current = setTimeout(() => {
+      setIsHovered(false); // Hide after 5 seconds
+    }, 5000);
+  };
+
+
+  const circleData = [
+    { id: 1, text: "Circle 1 Text", image: "televein.png" },
+    { id: 2, text: "Circle 2 Text", image: "televein.png" },
+    { id: 3, text: "Circle 3 Text", image: "televein.png" },
+  ];
   return (
     <div className="body">
     <div className="chatbot-container">
@@ -762,6 +782,30 @@ console.log(conversation)
         </form>
       </div>
     </div>
+    <div
+        className="main-button"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+         Games
+      {isHovered && (
+        <div className="circle-container">
+          {circleData.map((circle) => (
+            <div
+              key={circle.id}
+              className="circle"
+              onMouseEnter={() => setHoveredCircle(circle.id)}
+              onMouseLeave={() => setHoveredCircle(null)}
+            >
+              <img src={circle.image} alt={`Circle ${circle.id}`} />
+              {hoveredCircle === circle.id && (
+                <span className="circle-text">{circle.text}</span>
+              )}
+            </div>
+          ))}
+        </div>
+      )}
+      </div>
       <div>
             <button className="contact" onClick={ContactPage}>
               <img className="contact-img" src={Contact} alt="Contact"/>
